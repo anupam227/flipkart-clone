@@ -1,0 +1,80 @@
+.card {
+  width: 25%;
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 16px;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    &-top {
+      height: 280px;
+      width: 200px;
+      &-image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    &-bottom {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      &-product {
+        margin: 0;
+        padding-bottom: 5px;
+      }
+      &-rating {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        &-box {
+          background-color: green;
+          border-radius: 3px;
+          color: white;
+          padding: 2px 4px 2px 6px;
+          display: flex;
+          font-size: 13px;
+          &-number {
+            margin: 0;
+          }
+        }
+        &-count {
+          color: #878787;
+          font-weight: 500;
+        }
+        &-assure {
+          height: 21px;
+        }
+      }
+      &-price {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        &-current {
+          font-size: 16px;
+          font-weight: 500;
+          color: #212121;
+        }
+        &-actual {
+          color: #878787;
+          font-size: 14px;
+          text-decoration: line-through;
+        }
+        &-discount {
+          color: #388e3c;
+          font-size: 13px;
+          letter-spacing: -0.2px;
+          font-weight: 500;
+        }
+      }
+      &-offer {
+        font-weight: 700;
+        font-size: 14px;
+        color: green;
+      }
+    }
+  }
+}
